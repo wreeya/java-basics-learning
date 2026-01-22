@@ -3,10 +3,19 @@ import java.util.Scanner;
 public class AlgorithmClasswork {
 
     public static void main(String[] args){
+          Scanner sc = new Scanner(System.in);
+          System.out.println("Enter the no of sales each salespeople made: ");
+          int sale = sc.nextInt();
+          int remaining = (10 - sale);
+        if (sale >= 10) {
+            System.out.println("Congratulations u have made a good sale");
+        }
+        else{
+            System.out.println("Sales were short by: "+remaining);
+        }
           int payment = 1000;
           int bonus = 250;
           int total = payment + bonus;
-          Scanner sc = new Scanner(System.in);
           System.out.println("Enter the no of sales of employee: ");
           int sales = sc.nextInt();
           if(sales > 10){
